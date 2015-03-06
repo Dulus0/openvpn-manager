@@ -59,7 +59,6 @@
             // panel1
             // 
             resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.linkLabel2);
             this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.label1);
@@ -68,7 +67,6 @@
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
-            this.label2.MaximumSize = new System.Drawing.Size(200, 0);
             this.label2.Name = "label2";
             // 
             // linkLabel2
@@ -88,7 +86,6 @@
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            this.label1.MaximumSize = new System.Drawing.Size(200, 0);
             this.label1.Name = "label1";
             // 
             // btnUpdateCheck
@@ -105,6 +102,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnUpdateCheck);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblName);
