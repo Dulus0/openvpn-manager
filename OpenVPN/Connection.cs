@@ -226,7 +226,7 @@ namespace OpenVPNUtils
                     if (i != 8)
                     {
                         m_logs.logDebugLine(1, "Trying again in a second");
-                        System.Threading.Thread.Sleep(500);
+                        System.Threading.Thread.Sleep(1000);
                     }
                 }
             }
@@ -234,7 +234,7 @@ namespace OpenVPNUtils
             if (m_state.ConnectionState != VPNConnectionState.Initializing)
                 return false;
 
-            m_logs.logDebugLine(1, "Could not establish connection, abording");
+            m_logs.logDebugLine(1, "Could not establish connection, aborting");
             m_state.ConnectionState = VPNConnectionState.Running;
             Disconnect();
 
