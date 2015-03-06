@@ -28,6 +28,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenVPNManagerService", "Op
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenVPNUtils", "OpenVPNUtils\OpenVPNUtils.csproj", "{A5E1C024-F10F-4254-B83A-4653DEFAC1D1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "executables", "executables", "{BE31B98A-B77B-48A5-9085-BC2029A10C1B}"
+	ProjectSection(SolutionItems) = preProject
+		executables\fwknop.exe = executables\fwknop.exe
+		executables\libfko.dll = executables\libfko.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
